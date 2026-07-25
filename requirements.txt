@@ -3,4 +3,5 @@ mediapipe
 opencv-python-headless
 pandas
 numpy
+plotly
 crewai
