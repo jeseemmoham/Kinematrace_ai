@@ -1,7 +1,6 @@
 streamlit
-plotly
+mediapipe
+opencv-python-headless
 pandas
 numpy
-scikit-learn
-mediapipe==0.10.35
-imageio
+crewai
