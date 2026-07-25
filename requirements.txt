@@ -4,4 +4,4 @@ pandas
 numpy
 scikit-learn
 mediapipe==0.10.35
-opencv-python-headless==4.12.0.88
+opencv-python-headless
