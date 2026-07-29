@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+/* ── KinemaTrace AI — Warm Charcoal (#171412) & Copper (#B45309) Theme ── */
+:root {
+  --kt-bg:          #171412; /* Warm Charcoal background */
+  --kt-sidebar:     #171412; /* Warm Charcoal sidebar */
+  --kt-header:      #171412; /* Warm Charcoal header */
+  --kt-card:        #211C18; /* Lighter warm charcoal card bg */
+  --kt-card-border: #3A3028; /* Warm subtle border stroke */
+  --kt-card-hover:  #2D2621; /* Card hover fill */
+  
+  --kt-copper:      #B45309; /* Primary warm copper accent */
+  --kt-copper-hover:#D97706; /* Warm copper hover */
+  --kt-copper-glow: rgba(180, 83, 9, 0.2);
+  
+  --kt-text-main:   #F8F5F0; /* Warm crisp off-white text */
+  --kt-text-sub:    #A8A09A; /* Warm secondary gray */
+  --kt-text-muted:  #786E65; /* Muted brown-gray */
+  
+  --kt-green:       #10B981; /* Emerald success */
+  --kt-green-glow:  rgba(16, 185, 129, 0.2);
+  --kt-red:         #EF4444; /* High risk red */
+  --kt-purple:      #A855F7; /* Stance purple */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--kt-bg);
+  color: var(--kt-text-main);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: thin;
+  scrollbar-color: #3A3028 #171412;
+  overflow-x: hidden;
+}
+
+/* Custom Warm Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #171412; }
+::-webkit-scrollbar-thumb { background: #3A3028; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #B45309; }
+
+/* Warm Charcoal Cards */
+.dark-card {
+  background: var(--kt-card);
+  border: 1px solid var(--kt-card-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+.dark-card:hover {
+  border-color: #4A3E34;
+}
+
+.dark-card-copper {
+  background: var(--kt-card);
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(180, 83, 9, 0.1);
+}
+
+/* Badges */
+.badge-kt {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.badge-kt-green {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10B981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.badge-kt-orange,
+.badge-kt-copper {
+  background: rgba(180, 83, 9, 0.2);
+  color: #D97706;
+  border: 1px solid rgba(180, 83, 9, 0.5);
+}
+
+.badge-kt-red {
+  background: rgba(239, 68, 68, 0.18);
+  color: #EF4444;
+  border: 1px solid rgba(239, 68, 68, 0.45);
+}
+
+.badge-kt-gray {
+  background: rgba(120, 110, 101, 0.2);
+  color: #A8A09A;
+  border: 1px solid rgba(120, 110, 101, 0.4);
+}
+
+/* Glowing Pulsing Dots */
+.pulse-dot-kt {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  animation: pulseKt 2s infinite;
+}
+.pulse-dot-kt.green { background: #10B981; box-shadow: 0 0 8px #10B981; }
+.pulse-dot-kt.orange,
+.pulse-dot-kt.copper { background: #B45309; box-shadow: 0 0 8px #B45309; }
+
+@keyframes pulseKt {
+  0%   { opacity: 1; transform: scale(1); }
+  50%  { opacity: 0.4; transform: scale(0.85); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Copper Primary Buttons */
+.btn-copper {
+  background: linear-gradient(135deg, #B45309 0%, #92400E 100%);
+  color: #F8F5F0;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 9px 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-copper:hover {
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.4);
+  transform: translateY(-1px);
+}
+.btn-copper:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-copper-outline {
+  background: rgba(180, 83, 9, 0.1);
+  color: #D97706;
+  border: 1px solid rgba(180, 83, 9, 0.45);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.btn-copper-outline:hover {
+  background: rgba(180, 83, 9, 0.25);
+  border-color: #B45309;
+  box-shadow: 0 0 12px rgba(180, 83, 9, 0.3);
+  color: #F8F5F0;
+}
+
+.fade-in {
+  animation: fadeInKt 0.3s ease;
+}
+@keyframes fadeInKt {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
