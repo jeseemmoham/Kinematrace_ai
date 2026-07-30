@@ -1,0 +1,114 @@
+{
+  "patients": {
+    "KT-2026-P902": {
+      "assessments": [
+        {
+          "assessment_id": "c86c2177-f6bb-4615-a600-f0df267030ba",
+          "saved_at": "2026-07-27T15:38:31.524015",
+          "patient_id": "KT-2026-P902",
+          "assessment_date": "2026-05-10",
+          "asymmetry_percentage": 28.5,
+          "peak_asymmetry_percentage": 41.2,
+          "risk_level": "HIGH",
+          "severity": "SIGNIFICANT",
+          "affected_side": "RIGHT",
+          "left_rom_deg": 45.0,
+          "right_rom_deg": 33.0,
+          "rom_deficit_deg": 12.0,
+          "mean_si_pct": 28.5,
+          "peak_si_pct": 41.2,
+          "age": "7 y/o"
+        },
+        {
+          "assessment_id": "32aa72c7-4561-49a7-b301-cd69a92e36d0",
+          "saved_at": "2026-07-27T15:38:31.524015",
+          "patient_id": "KT-2026-P902",
+          "assessment_date": "2026-06-05",
+          "asymmetry_percentage": 23.8,
+          "peak_asymmetry_percentage": 37.4,
+          "risk_level": "HIGH",
+          "severity": "SIGNIFICANT",
+          "affected_side": "RIGHT",
+          "left_rom_deg": 46.0,
+          "right_rom_deg": 36.0,
+          "rom_deficit_deg": 10.0,
+          "mean_si_pct": 23.8,
+          "peak_si_pct": 37.4,
+          "age": "7 y/o"
+        },
+        {
+          "assessment_id": "fa31616b-d795-4f4c-aac7-eccfa68c0a3c",
+          "saved_at": "2026-07-27T15:38:31.524015",
+          "patient_id": "KT-2026-P902",
+          "assessment_date": "2026-07-01",
+          "asymmetry_percentage": 19.2,
+          "peak_asymmetry_percentage": 32.6,
+          "risk_level": "HIGH",
+          "severity": "SIGNIFICANT",
+          "affected_side": "RIGHT",
+          "left_rom_deg": 47.0,
+          "right_rom_deg": 38.5,
+          "rom_deficit_deg": 8.5,
+          "mean_si_pct": 19.2,
+          "peak_si_pct": 32.6,
+          "age": "7 y/o"
+        }
+      ]
+    },
+    "PED-2026-001": {
+      "assessments": [
+        {
+          "assessment_id": "a5705fd2-e096-437d-9036-09fe2bad798f",
+          "saved_at": "2026-07-27T15:38:31.524015",
+          "patient_id": "PED-2026-001",
+          "assessment_date": "2026-05-15",
+          "asymmetry_percentage": 27.0,
+          "peak_asymmetry_percentage": 40.0,
+          "risk_level": "HIGH",
+          "severity": "SIGNIFICANT",
+          "affected_side": "BILATERAL",
+          "left_rom_deg": 50.0,
+          "right_rom_deg": 50.0,
+          "rom_deficit_deg": 0.0,
+          "mean_si_pct": 27.0,
+          "peak_si_pct": 40.0,
+          "age": "7 y/o"
+        },
+        {
+          "assessment_id": "b00490e8-993e-4a02-b90b-d9d490bf7544",
+          "saved_at": "2026-07-27T15:38:31.524015",
+          "patient_id": "PED-2026-001",
+          "assessment_date": "2026-06-12",
+          "asymmetry_percentage": 26.3,
+          "peak_asymmetry_percentage": 39.5,
+          "risk_level": "HIGH",
+          "severity": "SIGNIFICANT",
+          "affected_side": "BILATERAL",
+          "left_rom_deg": 50.5,
+          "right_rom_deg": 50.5,
+          "rom_deficit_deg": 0.0,
+          "mean_si_pct": 26.3,
+          "peak_si_pct": 39.5,
+          "age": "7 y/o"
+        },
+        {
+          "assessment_id": "10559128-1968-43e7-9f0f-5b988056b140",
+          "saved_at": "2026-07-27T15:38:31.524015",
+          "patient_id": "PED-2026-001",
+          "assessment_date": "2026-07-05",
+          "asymmetry_percentage": 25.8,
+          "peak_asymmetry_percentage": 38.9,
+          "risk_level": "HIGH",
+          "severity": "SIGNIFICANT",
+          "affected_side": "BILATERAL",
+          "left_rom_deg": 51.0,
+          "right_rom_deg": 51.0,
+          "rom_deficit_deg": 0.0,
+          "mean_si_pct": 25.8,
+          "peak_si_pct": 38.9,
+          "age": "7 y/o"
+        }
+      ]
+    }
+  }
+}
